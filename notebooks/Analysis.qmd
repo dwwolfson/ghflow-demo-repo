@@ -114,7 +114,3 @@ This table shows the model coefficients.
 ```{r model-output}
 bodymass_coef_table
 ```
-
-These are the new changes so that I can push the differences to the new branch for the workshop demo.
-Change 1.
-change 2.
