@@ -16,10 +16,10 @@ library(forcats)
 library(stringr)
 library(tidyr)
 library(labelled)
-# NOTE: {gtsummary} is heavy; install & adapt code at your own convenience
-# library(gtsummary) # TODO: Uncomment (& install packages if using {gtsummary})
-# library(broom)         # These do not need to be loaded actually, but they are
-# library(broom.helpers) #   needed for {gtsummary} to work.
+
+library(gtsummary) 
+library(broom)         
+library(broom.helpers) #   needed for {gtsummary} to work.
 
 
 # Environment configuration:
@@ -95,7 +95,7 @@ bodymass_fit <- lm(body_mass_g ~ sex + species, data = penguins_data)
 bodymass_coef_table <- bodymass_fit |> coef()
 ## TODO: Drop if using {gtsummary}
 
-# bodymass_coef_table <- bodymass_fit |> tbl_regression()
+bodymass_coef_table <- bodymass_fit |> tbl_regression()
 ## TODO: Uncomment if using {gtsummary}
 ```
 
@@ -114,3 +114,7 @@ This table shows the model coefficients.
 ```{r model-output}
 bodymass_coef_table
 ```
+
+These are the new changes so that I can push the differences to the new branch for the workshop demo.
+Change 1.
+change 2.
